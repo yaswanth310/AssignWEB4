@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yaswanth Website Layout</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightblue;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px)  {
+  .column {
+    width: 100%;
+  }
+}
+@media screen and (max-width:1200px) and (min-width:600px )  {
+  .column {
+    width: 50%;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Personal information</h1>
+  <p> My name is Yaswanth. Studying ECE 3rd year at NIT WARANGAL. I am from Guntur District, Andhra Pradesh.</p>
+  <p>Course is Web Technologies</p>
+  <p>Roll no:184214</p>
+  <p>Reg no:961808</p>
+</div>
+
+
+<div class="row">
+  <div class="column">
+    <h2>Photo</h2>
+    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEnsihK2z6P5w/profile-displayphoto-shrink_100_100/0/1592975261448?e=1617235200&v=beta&t=psCo5Z4g5SmDuTqL62WGC3p3Urd-lqNGbT3lHsyhlxU" 
+  alt="My photo" width="180" height="160"><br>
+  </div>
+  
+  <div class="column">
+    <h2>Photo</h2>
+    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEnsihK2z6P5w/profile-displayphoto-shrink_100_100/0/1592975261448?e=1617235200&v=beta&t=psCo5Z4g5SmDuTqL62WGC3p3Urd-lqNGbT3lHsyhlxU" 
+  alt="My photo" width="180" height="160"><br>
+  </div>
+  
+  <div class="column">
+    <h2>Photo</h2>
+    <img src="https://media-exp1.licdn.com/dms/image/C5603AQEnsihK2z6P5w/profile-displayphoto-shrink_100_100/0/1592975261448?e=1617235200&v=beta&t=psCo5Z4g5SmDuTqL62WGC3p3Urd-lqNGbT3lHsyhlxU" 
+  alt="My photo" width="180" height="160"><br>
+  </div>
+</div>
+
+</body>
+</html>
